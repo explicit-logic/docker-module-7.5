@@ -125,7 +125,7 @@ You should see a `Login Succeeded` message upon successful authentication.
 If you haven't already built your application image, build it now:
 
 ```sh
-docker build -t my-app:1.0 .
+docker build --platform linux/amd64 -t my-app:1.0 .
 ```
 
 This command builds the Docker image from the Dockerfile in the current directory and tags it as `my-app:1.0`.
